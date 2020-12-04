@@ -1,0 +1,679 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1254.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxvsscencebuilder.FXMLDocumentController">
+   <children>
+      <StackPane fx:id="ControlTable" layoutX="14.0" layoutY="494.0" prefHeight="200.0" prefWidth="1326.0">
+         <children>
+            <Rectangle fx:id="RectOutput" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="180.0" layoutX="930.0" layoutY="28.0" stroke="BLACK" strokeType="INSIDE" style="-fx-arc-height: 20; -fx-arc-width: 20;" width="80.0">
+               <StackPane.margin>
+                  <Insets bottom="-55.0" left="1000.0" />
+               </StackPane.margin>
+            </Rectangle>
+            <Rectangle fx:id="RectInterrogator" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="180.0" layoutX="631.0" layoutY="28.0" stroke="BLACK" strokeType="INSIDE" style="-fx-arc-height: 20; -fx-arc-width: 20;" width="187.0">
+               <StackPane.margin>
+                  <Insets bottom="-55.0" left="700.0" />
+               </StackPane.margin>
+            </Rectangle>
+            <Rectangle fx:id="RectTransmit" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="180.0" layoutX="430.0" layoutY="28.0" stroke="BLACK" strokeType="INSIDE" style="-fx-arc-height: 20; -fx-arc-width: 20;" width="284.0">
+               <StackPane.margin>
+                  <Insets bottom="-55.0" left="200.0" />
+               </StackPane.margin>
+            </Rectangle>
+            <Rectangle fx:id="RectAntenna" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="180.0" layoutX="336.0" layoutY="28.0" stroke="BLACK" strokeType="INSIDE" style="-fx-arc-height: 20; -fx-arc-width: 20;" width="186.0">
+               <StackPane.margin>
+                  <Insets bottom="-55.0" left="-300.0" />
+               </StackPane.margin>
+            </Rectangle>
+            <Rectangle fx:id="RectRadar" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="180.0" layoutX="17.0" layoutY="30.0" stroke="BLACK" strokeType="INSIDE" style="-fx-arc-height: 20; -fx-arc-width: 20;" width="74.0">
+               <StackPane.margin>
+                  <Insets bottom="-55.0" left="-600.0" />
+               </StackPane.margin>
+            </Rectangle>
+            <Rectangle fx:id="RectConsole" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="180.0" stroke="BLACK" strokeType="INSIDE" style="-fx-arc-height: 30; -fx-arc-width: 30;" width="305.0">
+               <StackPane.margin>
+                  <Insets bottom="-55.0" left="-1020.0" />
+               </StackPane.margin>
+            </Rectangle>
+            <Label text="RUN">
+               <padding>
+                  <Insets bottom="75.0" left="12.0" />
+               </padding>
+               <StackPane.margin>
+                  <Insets left="590.0" />
+               </StackPane.margin>
+            </Label>
+            <Label prefHeight="17.0" prefWidth="38.0" text="POWER">
+               <font>
+                  <Font size="10.0" />
+               </font>
+               <StackPane.margin>
+                  <Insets bottom="10.0" left="-1245.0" />
+               </StackPane.margin>
+            </Label>
+            <Circle fx:id="fuse" fill="#1c1d1e" radius="15.0" stroke="BLACK" strokeType="INSIDE">
+               <StackPane.margin>
+                  <Insets bottom="-30.0" left="-1130.0" />
+               </StackPane.margin></Circle>
+            <Button fx:id="BtnPWR" mnemonicParsing="false" onAction="#click" prefHeight="56.0" prefWidth="40.0" textAlignment="CENTER">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <StackPane.margin>
+                  <Insets bottom="-60.0" left="-1250.0" />
+               </StackPane.margin>
+            </Button>
+            <Circle fx:id="LED24" fill="#a5f19e" radius="9.0" stroke="#a8e494" strokeType="INSIDE">
+               <StackPane.margin>
+                  <Insets bottom="-30.0" left="-1050.0" />
+               </StackPane.margin></Circle>
+            <Label text="+24V">
+               <StackPane.margin>
+                  <Insets bottom="10.0" left="-1050.0" />
+               </StackPane.margin>
+            </Label>
+            <Circle fx:id="LED12" fill="#a6f09e" radius="9.0" stroke="#a3d080" strokeType="INSIDE">
+               <StackPane.margin>
+                  <Insets bottom="-30.0" left="-900.0" />
+               </StackPane.margin>
+            </Circle>
+            <Label text="+12V">
+               <StackPane.margin>
+                  <Insets bottom="10.0" left="-900.0" />
+               </StackPane.margin>
+            </Label>
+            <Label text="CONTROL">
+               <padding>
+                  <Insets bottom="75.0" />
+               </padding>
+               <StackPane.margin>
+                  <Insets left="-800.0" />
+               </StackPane.margin>
+            </Label>
+            <Label text="START">
+               <padding>
+                  <Insets bottom="75.0" left="10.0" />
+               </padding>
+               <StackPane.margin>
+                  <Insets left="-610.0" />
+               </StackPane.margin>
+            </Label>
+            <Button fx:id="BtnControl" mnemonicParsing="false" prefHeight="52.0" prefWidth="52.0">
+               <StackPane.margin>
+                  <Insets left="-800.0" />
+               </StackPane.margin></Button>
+            <Label text="STOP">
+               <padding>
+                  <Insets bottom="75.0" left="10.0" />
+               </padding>
+               <StackPane.margin>
+                  <Insets bottom="-170.0" left="-610.0" />
+               </StackPane.margin>
+            </Label>
+            <Button fx:id="BtnStart" mnemonicParsing="false" onAction="#clickStart" prefHeight="52.0" prefWidth="52.0">
+               <StackPane.margin>
+                  <Insets left="-600.0" />
+               </StackPane.margin></Button>
+            <Label text="ROTATE">
+               <padding>
+                  <Insets bottom="75.0" left="5.0" />
+               </padding>
+               <StackPane.margin>
+                  <Insets left="-400.0" />
+               </StackPane.margin>
+            </Label>
+            <Button fx:id="BtnStop" mnemonicParsing="false" prefHeight="52.0" prefWidth="52.0" style="-fx-background-color: #640202;">
+               <StackPane.margin>
+                  <Insets bottom="-170.0" left="-600.0" />
+               </StackPane.margin></Button>
+            <Label text="PARK">
+               <padding>
+                  <Insets bottom="75.0" left="12.0" />
+               </padding>
+               <StackPane.margin>
+                  <Insets bottom="-170.0" left="-410.0" />
+               </StackPane.margin>
+            </Label>
+            <Button fx:id="BtnRotate" mnemonicParsing="false" onAction="#clickRotate" prefHeight="52.0" prefWidth="52.0">
+               <StackPane.margin>
+                  <Insets left="-400.0" />
+               </StackPane.margin></Button>
+            <Label text="UP">
+               <padding>
+                  <Insets bottom="75.0" left="20.0" />
+               </padding>
+               <StackPane.margin>
+                  <Insets left="-230.0" />
+               </StackPane.margin>
+            </Label>
+            <Button fx:id="BtnPark" mnemonicParsing="false" prefHeight="52.0" prefWidth="52.0">
+               <StackPane.margin>
+                  <Insets bottom="-170.0" left="-400.0" />
+               </StackPane.margin></Button>
+            <Label text="DOWN">
+               <padding>
+                  <Insets bottom="75.0" left="7.0" />
+               </padding>
+               <StackPane.margin>
+                  <Insets bottom="-170.0" left="-210.0" />
+               </StackPane.margin>
+            </Label>
+            <Button fx:id="BtnUp" mnemonicParsing="false" prefHeight="52.0" prefWidth="52.0">
+               <StackPane.margin>
+                  <Insets left="-200.0" />
+               </StackPane.margin></Button>
+            <Label text="TRANSMIT">
+               <padding>
+                  <Insets bottom="75.0" left="-4.0" />
+               </padding>
+               <StackPane.margin>
+                  <Insets left="5.0" />
+               </StackPane.margin>
+            </Label>
+            <Button fx:id="BtnDown" mnemonicParsing="false" prefHeight="52.0" prefWidth="52.0">
+               <StackPane.margin>
+                  <Insets bottom="-170.0" left="-200.0" />
+               </StackPane.margin></Button>
+            <Label text="SH6">
+               <padding>
+                  <Insets bottom="75.0" />
+               </padding>
+               <StackPane.margin>
+                  <Insets bottom="-170.0" />
+               </StackPane.margin>
+            </Label>
+            <Button fx:id="BtnTransmit" mnemonicParsing="false" onAction="#clickTransmit" prefHeight="52.0" prefWidth="52.0">
+               <StackPane.margin>
+                  <Insets />
+               </StackPane.margin></Button>
+            <Label text="RATIO1">
+               <padding>
+                  <Insets bottom="75.0" left="7.0" />
+               </padding>
+               <StackPane.margin>
+                  <Insets left="190.0" />
+               </StackPane.margin>
+            </Label>
+            <Button fx:id="BtnSh6" mnemonicParsing="false" onAction="#clickSH6" prefHeight="52.0" prefWidth="52.0" style="-fx-background-color: #640202;">
+               <StackPane.margin>
+                  <Insets bottom="-170.0" />
+               </StackPane.margin></Button>
+            <Label text="SECTOR">
+               <padding>
+                  <Insets bottom="75.0" left="5.0" />
+               </padding>
+               <StackPane.margin>
+                  <Insets bottom="-170.0" left="200.0" />
+               </StackPane.margin>
+            </Label>
+            <Button fx:id="BtnRatio1" mnemonicParsing="false" onAction="#clickRatio1" prefHeight="52.0" prefWidth="52.0" style="-fx-background-color: #640202;">
+               <StackPane.margin>
+                  <Insets left="200.0" />
+               </StackPane.margin></Button>
+            <Label text="RATIO2">
+               <padding>
+                  <Insets bottom="75.0" left="7.0" />
+               </padding>
+               <StackPane.margin>
+                  <Insets left="390.0" />
+               </StackPane.margin>
+            </Label>
+            <Button fx:id="BtnSector" mnemonicParsing="false" onAction="#clickSetor" prefHeight="52.0" prefWidth="52.0" style="-fx-background-color: #640202;">
+               <StackPane.margin>
+                  <Insets bottom="-170.0" left="200.0" />
+               </StackPane.margin></Button>
+            <Label text="LOW PWR">
+               <padding>
+                  <Insets bottom="75.0" />
+               </padding>
+               <StackPane.margin>
+                  <Insets bottom="-170.0" left="400.0" />
+               </StackPane.margin>
+            </Label>
+            <Button fx:id="BtnRatio2" mnemonicParsing="false" onAction="#clickRatio2" prefHeight="52.0" prefWidth="52.0" style="-fx-background-color: #640202;">
+               <StackPane.margin>
+                  <Insets left="400.0" />
+               </StackPane.margin></Button>
+            <Button fx:id="BtnRun" mnemonicParsing="false" onAction="#clickRun" prefHeight="52.0" prefWidth="52.0">
+               <StackPane.margin>
+                  <Insets left="600.0" />
+               </StackPane.margin></Button>
+            <Button fx:id="BtnLow" mnemonicParsing="false" onAction="#clickLowPWR" prefHeight="52.0" prefWidth="52.0" style="-fx-background-color: #640202;">
+               <StackPane.margin>
+                  <Insets bottom="-170.0" left="400.0" />
+               </StackPane.margin></Button>
+            <Label text="SELECT">
+               <padding>
+                  <Insets bottom="75.0" left="7.0" />
+               </padding>
+               <StackPane.margin>
+                  <Insets bottom="-170.0" left="600.0" />
+               </StackPane.margin>
+            </Label>
+            <Button fx:id="BtnSelect" mnemonicParsing="false" onAction="#clickSelect" prefHeight="52.0" prefWidth="52.0" style="-fx-background-color: #640202;">
+               <StackPane.margin>
+                  <Insets bottom="-170.0" left="600.0" />
+               </StackPane.margin></Button>
+            <Label text="MODE1">
+               <padding>
+                  <Insets bottom="75.0" left="5.0" />
+               </padding>
+               <StackPane.margin>
+                  <Insets left="790.0" />
+               </StackPane.margin>
+            </Label>
+            <Button fx:id="BtnMode1" mnemonicParsing="false" onAction="#clickMode1" prefHeight="52.0" prefWidth="52.0" style="-fx-background-color: #640202;">
+               <StackPane.margin>
+                  <Insets left="800.0" />
+               </StackPane.margin></Button>
+            <Label text="MODE2">
+               <padding>
+                  <Insets bottom="75.0" left="4.0" />
+               </padding>
+               <StackPane.margin>
+                  <Insets bottom="-170.0" left="800.0" />
+               </StackPane.margin>
+            </Label>
+            <Button fx:id="BtnMode2" mnemonicParsing="false" onAction="#clickMode2" prefHeight="52.0" prefWidth="52.0" style="-fx-background-color: #640202;">
+               <StackPane.margin>
+                  <Insets bottom="-170.0" left="800.0" />
+               </StackPane.margin></Button>
+            <Label text="OUTPUT">
+               <padding>
+                  <Insets bottom="75.0" left="3.0" />
+               </padding>
+               <StackPane.margin>
+                  <Insets left="1000.0" />
+               </StackPane.margin>
+            </Label>
+            <Button fx:id="BtnOutput" mnemonicParsing="false" onAction="#clickOutput" prefHeight="52.0" prefWidth="52.0">
+               <StackPane.margin>
+                  <Insets left="1000.0" />
+               </StackPane.margin></Button>
+            <Label text="SELECT">
+               <padding>
+                  <Insets bottom="75.0" left="5.0" />
+               </padding>
+               <StackPane.margin>
+                  <Insets bottom="-170.0" left="1000.0" />
+               </StackPane.margin>
+            </Label>
+            <Button fx:id="BtnSelectO" mnemonicParsing="false" onAction="#clickSelectO" prefHeight="52.0" prefWidth="52.0" style="-fx-background-color: #640202;">
+               <StackPane.margin>
+                  <Insets bottom="-170.0" left="1000.0" />
+               </StackPane.margin></Button>
+            <Label text="ELEVATION">
+               <StackPane.margin>
+                  <Insets bottom="105.0" left="-200.0" />
+               </StackPane.margin>
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+            <Label layoutX="545.0" layoutY="30.0" text="SCAN LIMIT">
+               <font>
+                  <Font size="11.0" />
+               </font>
+               <StackPane.margin>
+                  <Insets bottom="105.0" left="300.0" />
+               </StackPane.margin>
+            </Label>
+            <Label text="OUTPUTS">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <StackPane.margin>
+                  <Insets bottom="145.0" left="1000.0" />
+               </StackPane.margin>
+            </Label>
+            <Label layoutX="1143.0" layoutY="10.0" text="INTERROGATOR">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <StackPane.margin>
+                  <Insets bottom="145.0" left="700.0" />
+               </StackPane.margin>
+            </Label>
+            <Label layoutX="973.0" layoutY="10.0" text="TRANSMITTER">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <StackPane.margin>
+                  <Insets bottom="145.0" left="200.0" />
+               </StackPane.margin>
+            </Label>
+            <Label layoutX="728.0" layoutY="10.0" text="ANTENNA">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <StackPane.margin>
+                  <Insets bottom="145.0" left="-300.0" />
+               </StackPane.margin>
+            </Label>
+            <Label layoutX="491.0" layoutY="10.0" text="RADAR">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <StackPane.margin>
+                  <Insets bottom="145.0" left="-600.0" />
+               </StackPane.margin>
+            </Label>
+            <Label layoutX="351.0" layoutY="10.0" text="CONSOLE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <StackPane.margin>
+                  <Insets bottom="145.0" left="-1000.0" />
+               </StackPane.margin>
+            </Label>
+         </children>
+         <padding>
+            <Insets bottom="40.0" />
+         </padding>
+      </StackPane>
+      <GridPane gridLinesVisible="true" layoutX="21.0" layoutY="464.0" prefHeight="30.0" prefWidth="1312.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="7.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="80.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="-Infinity" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <StackPane fx:id="STT_MODE" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: black;" GridPane.columnIndex="15">
+               <children>
+                  <Text fx:id="TextMODE" strokeType="OUTSIDE" strokeWidth="0.0" text="Init">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+               </children>
+            </StackPane>
+            <StackPane fx:id="STT_CL" layoutX="10.0" layoutY="10.0" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: black;" GridPane.columnIndex="1">
+               <children>
+                  <Text fx:id="TextCL" strokeType="OUTSIDE" strokeWidth="0.0" text="Init">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+               </children>
+            </StackPane>
+            <StackPane fx:id="STT_Radar" layoutX="10.0" layoutY="10.0" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: black;" GridPane.columnIndex="3">
+               <children>
+                  <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Radar">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+               </children>
+            </StackPane>
+            <StackPane fx:id="STT_Transmit" layoutX="244.0" layoutY="10.0" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: black;" GridPane.columnIndex="6">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Transmit">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+               </children>
+            </StackPane>
+            <StackPane fx:id="STT_Antena" layoutX="322.0" layoutY="10.0" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: black;" GridPane.columnIndex="5">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Antenna">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+               </children>
+            </StackPane>
+            <StackPane fx:id="STT_Supply" layoutX="479.0" layoutY="10.0" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: black;" GridPane.columnIndex="4">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Supply">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+               </children>
+            </StackPane>
+            <StackPane fx:id="STT_Receiver" layoutX="322.0" layoutY="10.0" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: black;" GridPane.columnIndex="7">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Receiver">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+               </children>
+            </StackPane>
+            <StackPane fx:id="STT_Process" layoutX="558.0" layoutY="10.0" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: black;" GridPane.columnIndex="8">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Process">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+               </children>
+            </StackPane>
+            <StackPane fx:id="STT_Output" layoutX="637.0" layoutY="10.0" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: black;" GridPane.columnIndex="9">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Output">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+               </children>
+            </StackPane>
+            <StackPane fx:id="STT_RHF" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: black;" GridPane.columnIndex="14">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="RHF">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+               </children>
+            </StackPane>
+            <StackPane fx:id="STT_IFF" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: black;" GridPane.columnIndex="13">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="IFF">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+               </children>
+            </StackPane>
+            <StackPane fx:id="STT_SRCC" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: black;" GridPane.columnIndex="12">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="SRCC">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+               </children>
+            </StackPane>
+            <StackPane fx:id="STT_LMCC" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: black;" GridPane.columnIndex="11">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="LMCC">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+               </children>
+            </StackPane>
+            <StackPane fx:id="STT_PV" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: black;">
+               <children>
+                  <Text fx:id="TextPV" strokeType="OUTSIDE" strokeWidth="0.0" text="Init">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+               </children>
+            </StackPane>
+            <StackPane fx:id="STT_Recoder" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: black;" GridPane.columnIndex="10">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Recoder">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+               </children>
+            </StackPane>
+            <StackPane fx:id="STT_Time" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: black;" GridPane.columnIndex="2">
+               <children>
+                  <Text fx:id="TextTime" strokeType="OUTSIDE" strokeWidth="0.0" text="Init">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+               </children>
+            </StackPane>
+         </children>
+      </GridPane>
+      <Circle layoutX="550.0" layoutY="230.0" radius="210.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.3" />
+      <Circle layoutX="550.0" layoutY="230.0" radius="175.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.3" />
+      <Circle layoutX="550.0" layoutY="230.0" radius="140.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.3" />
+      <Circle layoutX="550.0" layoutY="230.0" radius="105.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.3" />
+      <Circle layoutX="550.0" layoutY="230.0" radius="70.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.3" />
+      <Circle layoutX="550.0" layoutY="230.0" radius="35.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.3" />
+      <Line endX="210.0" fill="WHITE" layoutX="550.0" layoutY="230.0" startX="-210.0" stroke="WHITE" strokeWidth="0.3" />
+      <Line endX="210.0" fill="WHITE" layoutX="550.0" layoutY="230.0" rotate="90.0" startX="-210.0" stroke="WHITE" strokeWidth="0.3" />
+      <Line endX="210.0" fill="WHITE" layoutX="550.0" layoutY="230.0" rotate="30.0" startX="-210.0" stroke="WHITE" strokeWidth="0.3" />
+      <Line endX="210.0" fill="WHITE" layoutX="550.0" layoutY="230.0" rotate="60.0" startX="-210.0" stroke="WHITE" strokeWidth="0.3" />
+      <Line endX="210.0" fill="WHITE" layoutX="550.0" layoutY="230.0" rotate="120.0" startX="-210.0" stroke="WHITE" strokeWidth="0.3" />
+      <Line endX="210.0" fill="WHITE" layoutX="550.0" layoutY="230.0" rotate="150.0" startX="-210.0" stroke="WHITE" strokeWidth="0.3" />
+      <Line fx:id="AntenRotate" layoutX="440.0" layoutY="120.0" rotate="90.0" startX="220.0" stroke="#fffdfd" strokeWidth="0.5" />
+      <AnchorPane layoutX="1013.0" layoutY="2.0" prefHeight="461.0" prefWidth="321.0" style="-fx-background-color: #2e2e2e;">
+         <children>
+            <Label layoutX="133.0" layoutY="4.0" text="Jammers" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="TextTrans" layoutX="14.0" layoutY="439.0" text="Trans:  0" textFill="#fffdfd" />
+            <Label fx:id="TextPlots" layoutX="123.0" layoutY="439.0" text="Plots:  0" textFill="#fffdfd" />
+            <Label fx:id="TextTracks" layoutX="235.0" layoutY="439.0" text="Tracks:  0" textFill="#fffdfd" />
+            <Label fx:id="TextDisplays" layoutX="14.0" layoutY="414.0" text="Displays:" textFill="#fffdfd" />
+            <Label fx:id="TextProtection" layoutX="14.0" layoutY="376.0" text="Protection:" textFill="#fffdfd" />
+            <Label layoutX="11.0" layoutY="324.0" text="SP" textFill="#fffdfd">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <ScrollBar fx:id="ScrollSP" blockIncrement="1.0" layoutX="37.0" layoutY="317.0" max="8.0" prefHeight="20.0" prefWidth="210.0" style="-fx-background-color: #737373;" value="3.0" visibleAmount="2.0" />
+            <StackPane fx:id="StackSP" layoutX="255.0" layoutY="315.0" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: white;">
+               <children>
+                  <Text fx:id="TextSP" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+               </children>
+            </StackPane>
+            <StackPane fx:id="StackLP" layoutX="255.0" layoutY="231.0" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: white;">
+               <children>
+                  <Text fx:id="TextLP" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+               </children>
+            </StackPane>
+            <Label layoutX="10.0" layoutY="295.0" text="Noise:" textFill="#fffdfd" />
+            <ScrollBar fx:id="ScrollLP" blockIncrement="1.0" layoutX="37.0" layoutY="232.0" max="8.0" prefHeight="20.0" prefWidth="210.0" style="-fx-background-color: #737373;" value="3.0" visibleAmount="2.0" />
+            <Label layoutX="11.0" layoutY="246.0" text="LP" textFill="#fffdfd">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Text fx:id="TextTempCAB" fill="#1dc931" layoutX="250.0" layoutY="225.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" -- " wrappingWidth="56.0" />
+            <Text fx:id="TextTempSTX" fill="#1dc931" layoutX="81.0" layoutY="222.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-- " wrappingWidth="43.0" />
+            <Text fx:id="TextVSWR" fill="#1dc931" layoutX="253.0" layoutY="207.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-- " wrappingWidth="22.0" />
+            <Text fx:id="TextPower" fill="#1dc931" layoutX="81.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-- " wrappingWidth="48.0" />
+            <Text fx:id="TextElevation" fill="#1dc931" layoutX="251.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0.0 " wrappingWidth="33.0" />
+            <Label layoutX="14.0" layoutY="147.0" text="Velocity:" textFill="#fffdfd" />
+            <Line endX="85.0" layoutX="144.0" layoutY="257.0" startX="-85.0" stroke="#b9b4b4" />
+            <Line endX="5.0" layoutX="61.0" layoutY="262.0" rotate="90.0" startX="-5.0" stroke="#b9b4b4" />
+            <Line endX="5.0" layoutX="230.0" layoutY="263.0" rotate="90.0" startX="-5.0" stroke="#b9b4b4" />
+            <Line endX="5.0" layoutX="214.0" layoutY="262.0" rotate="90.0" startX="-5.0" stroke="#b9b4b4" />
+            <Line endX="5.0" layoutX="193.0" layoutY="263.0" rotate="90.0" startX="-5.0" stroke="#b9b4b4" />
+            <Line endX="5.0" layoutX="174.0" layoutY="263.0" rotate="90.0" startX="-5.0" stroke="#b9b4b4" />
+            <Line endX="5.0" layoutX="153.0" layoutY="262.0" rotate="90.0" startX="-5.0" stroke="#b9b4b4" />
+            <Line endX="5.0" layoutX="134.0" layoutY="262.0" rotate="90.0" startX="-5.0" stroke="#b9b4b4" />
+            <Line endX="5.0" layoutX="114.0" layoutY="262.0" rotate="90.0" startX="-5.0" stroke="#b9b4b4" />
+            <Line endX="5.0" layoutX="89.0" layoutY="263.0" rotate="90.0" startX="-5.0" stroke="#b9b4b4" />
+            <Line endX="5.0" layoutX="193.0" layoutY="348.0" rotate="90.0" startX="-5.0" stroke="#b9b4b4" />
+            <Line endX="5.0" layoutX="87.0" layoutY="348.0" rotate="90.0" startX="-5.0" stroke="#b9b4b4" />
+            <Line endX="5.0" layoutX="232.0" layoutY="348.0" rotate="90.0" startX="-5.0" stroke="#b9b4b4" />
+            <Line endX="5.0" layoutX="115.0" layoutY="348.0" rotate="90.0" startX="-5.0" stroke="#b9b4b4" />
+            <Line endX="5.0" layoutX="155.0" layoutY="349.0" rotate="90.0" startX="-5.0" stroke="#b9b4b4" />
+            <Line endX="85.0" layoutX="146.0" layoutY="342.0" startX="-85.0" stroke="#b9b4b4" />
+            <Line endX="5.0" layoutX="213.0" layoutY="348.0" rotate="90.0" startX="-5.0" stroke="#b9b4b4" />
+            <Line endX="5.0" layoutX="175.0" layoutY="349.0" rotate="90.0" startX="-5.0" stroke="#b9b4b4" />
+            <Text fill="#c3c3c3" layoutX="54.0" layoutY="365.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-3    -2     -1    0    1    2    3    4    5" />
+            <Line endX="5.0" layoutX="61.0" layoutY="347.0" rotate="90.0" startX="-5.0" stroke="#b9b4b4" />
+            <Line endX="5.0" layoutX="137.0" layoutY="348.0" rotate="90.0" startX="-5.0" stroke="#b9b4b4" />
+            <Text fill="#c3c3c3" layoutX="54.0" layoutY="282.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-3    -2     -1    0    1    2    3    4    5" />
+            <Text fx:id="TextAzimuth" fill="#1dc931" layoutX="82.0" layoutY="186.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-- " wrappingWidth="16.0" />
+            <Text fill="WHITE" layoutX="13.0" layoutY="186.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Azimuth:" wrappingWidth="64.0" />
+            <Text fill="WHITE" layoutX="13.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Power:" wrappingWidth="64.0" />
+            <Text fill="WHITE" layoutX="13.0" layoutY="223.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Temp.STX:" wrappingWidth="64.0" />
+            <Text fill="WHITE" layoutX="171.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Elevation:" wrappingWidth="64.0" />
+            <Text fill="WHITE" layoutX="172.0" layoutY="207.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VSWR:" wrappingWidth="64.0" />
+            <Text fill="WHITE" layoutX="171.0" layoutY="224.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Temp.CAB:" wrappingWidth="64.0" />
+            <Text fx:id="TextNoise" fill="RED" layoutX="66.0" layoutY="309.0" strokeType="OUTSIDE" strokeWidth="0.0" text="23.3" />
+            <Text fx:id="TextNoise1" fill="RED" layoutX="112.0" layoutY="309.0" strokeType="OUTSIDE" strokeWidth="0.0" text="13.1" />
+            <Text fx:id="TextNoise2" fill="#00ff51" layoutX="164.0" layoutY="309.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4.1" />
+            <Text fx:id="TextNoise3" fill="RED" layoutX="209.0" layoutY="309.0" strokeType="OUTSIDE" strokeWidth="0.0" text="15.0" />
+            <Text fx:id="TextNoise4" fill="RED" layoutX="253.0" layoutY="308.0" strokeType="OUTSIDE" strokeWidth="0.0" text="9.7" />
+            <Button fx:id="BtnSLC" layoutX="132.0" layoutY="372.0" mnemonicParsing="false" onAction="#clickSLC" prefHeight="25.0" prefWidth="70.0" text="SLC" />
+            <Button fx:id="BtnPWS" layoutX="226.0" layoutY="372.0" mnemonicParsing="false" onAction="#clickPWS" prefHeight="25.0" prefWidth="70.0" text="PWS" />
+            <Button fx:id="BtnPlots" layoutX="132.0" layoutY="408.0" mnemonicParsing="false" onAction="#clickPlots" prefHeight="25.0" prefWidth="70.0" text="Plots" />
+            <Button fx:id="BtnTracks" layoutX="225.0" layoutY="408.0" mnemonicParsing="false" onAction="#clickTracks" prefHeight="25.0" prefWidth="70.0" style="-fx-background-color: grey;" text="Tracks" />
+            <Button fx:id="BtnNormal" layoutX="136.0" layoutY="143.0" mnemonicParsing="false" onAction="#clickNormal" prefHeight="25.0" prefWidth="70.0" style="-fx-background-color: grey;" text="Normal" />
+            <Button fx:id="BtnSlow" layoutX="229.0" layoutY="143.0" mnemonicParsing="false" onAction="#clickSlow" prefHeight="25.0" prefWidth="70.0" text="Slow" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="15.0" layoutY="2.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="306.0" prefWidth="255.0" style="-fx-background-color: white;">
+         <children>
+            <Label layoutY="14.0" text="Ý NGHĨA NÚM NÚT BÀN ĐIỀU KHIỂN LMCC" textFill="#4a00ff" underline="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="LebelInfo" layoutX="10.0" layoutY="34.0" prefHeight="150.0" prefWidth="236.0" text="RÊ CHUỘT VÀO NÚT NHẪN CẦN BIẾT" textAlignment="JUSTIFY" textFill="#ff0035">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Text fill="#2500f5" layoutX="47.0" layoutY="198.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TRẠNG THÁI NÚT ĐIỀU KHIỂN" underline="true" />
+            <Text fill="RED" layoutX="21.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="- Sáng mờ: Lệnh được phép chọn" />
+            <Text fill="RED" layoutX="21.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0" text="- Nháy: Đang thực hiện lệnh" />
+            <Text fill="RED" layoutX="21.0" layoutY="254.0" strokeType="OUTSIDE" strokeWidth="0.0" text="- Sáng xanh lá hoặc vàng: hoàn tất lệnh," />
+            <Text fill="RED" layoutX="21.0" layoutY="271.0" strokeType="OUTSIDE" strokeWidth="0.0" text="chức năng được chọn" />
+            <Text fill="RED" layoutX="21.0" layoutY="288.0" strokeType="OUTSIDE" strokeWidth="0.0" text="- Sáng đỏ: Lỗi trong việc thực hiện lệnh" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
